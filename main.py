@@ -38,14 +38,14 @@ def login():
 
 def getProperties():
     # getProperties
-    # POST https://dealerapp.siriusxm.com/services/DealerAppService7/getProperties
+    # POST https://dealerapp.siriusxm.com/services/USNewGetProperties/getProperties
 
     try:
         params = {"os":deviceiOSVersion,"dm":deviceModel,"did":uuid4,"ua":"iPhone","aid":"DealerApp","aname":"SiriusXM Dealer","chnl":"mobile","plat":"ios","aver":appVer,"atype":"native","stype":"b2c","kuid":"","mfaid":"df7be3dc-e278-436c-b2f8-4cfde321df0a","mfbaseid":"efb9acb6-daea-4f2f-aeb3-b17832bdd47b","mfaname":"DealerApp","sdkversion":"9.5.40","sdktype":"js","fid":"frmHome","sessiontype":"I","clientUUID":"1753190238810-b0b8-58ce-f72e","rsid":"1753213816663-89a7-7c9c-3ea3","svcid":"getProperties"}
         paramsStr = json.dumps(params, separators=(',', ':'))
         response = session.post(
             url=
-            "https://dealerapp.siriusxm.com/services/DealerAppService7/getProperties",
+            "https://dealerapp.siriusxm.com/services/USNewGetProperties/getProperties",
             headers={
                 "Accept": "*/*",
                 "X-Voltmx-API-Version": "1.0",
