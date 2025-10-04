@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       id:
-        description: 'ID to pass as the first argument to main.py'
+        description: 'ID to pass to main.py'
         required: true
         type: secret
 
