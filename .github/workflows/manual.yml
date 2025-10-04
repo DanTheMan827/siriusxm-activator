@@ -26,6 +26,6 @@ jobs:
 
       - name: Run main.py with secret input
         env:
-          ID: ${{ input.id }}
+          ID: ${{ github.event.inputs.id }}
         run: |
           python main.py "$ID"
