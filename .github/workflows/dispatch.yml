@@ -1,4 +1,4 @@
-name: Run main.py (workflow_dispatch)
+name: Run main.py
 on:
   workflow_dispatch:
     inputs:
@@ -29,4 +29,4 @@ jobs:
         env:
           ID: ${{ github.event.inputs.id }}
         run: |
-          python main.py "$ID"
+          echo "$ID" | python main.py
